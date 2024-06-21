@@ -15,6 +15,10 @@ dependencies:
 
 
   cupertino_icons: ^1.0.6
+  google_fonts:
+  get:
+  provider:
+  
 
 dev_dependencies:
   flutter_test:
@@ -40,4 +44,9 @@ flutter:
           weight: 500
         - asset: assets/fonts/Karla-Regular.ttf
           weight: 400    
-  
+    - family: font
+      fonts:
+        - asset: assets/fonts/font-bold.ttf
+          weight: 700
+        - asset: assets/fonts/font-light.ttf
+          weight: 400 

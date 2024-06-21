@@ -1,6 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:real_state_app/core/constants/strings.dart';
+import 'package:real_state_app/ui/screens/home/home_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -63,7 +67,7 @@ class WelcomeScreen extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 30,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w900,
               ),
             ),
           ),
@@ -81,16 +85,21 @@ class WelcomeScreen extends StatelessWidget {
           SizedBox(
             height: height * 0.04,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 80),
-            padding: EdgeInsets.symmetric(vertical: 15),
-            child: Center(
-                child: Text(
-              "Register",
-              style: TextStyle(color: Colors.white, fontSize: 18),
-            )),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25), color: Colors.black),
+          GestureDetector(
+            onTap: () {
+              Get.to(HomeScreen());
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 80),
+              padding: EdgeInsets.symmetric(vertical: 15),
+              child: Center(
+                  child: Text(
+                "Register",
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              )),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25), color: Colors.black),
+            ),
           ),
           SizedBox(
             height: height * 0.01,
