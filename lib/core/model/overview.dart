@@ -6,8 +6,16 @@ class Overview {
   String month;
   String title;
   String subtitle;
+  String? ct1;
+  String? ct2;
+  String? ct3;
+  String? detail;
   Overview(
-      {required this.image,
+      {this.ct1,
+      this.ct2,
+      this.ct3,
+      this.detail,
+      required this.image,
       required this.money,
       required this.subtitle,
       required this.month,

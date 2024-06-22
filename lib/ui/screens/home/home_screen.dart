@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
   Expanded _listview(HomeViewModel model) {
     return Expanded(
         child: ListView.separated(
-            physics: BouncingScrollPhysics(),
+            //physics: BouncingScrollPhysics(),
             itemBuilder: (context, index) {
               return GestureDetector(
                 onTap: () {
